@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <ul class="header_nav_list">
+          <li><a href="#">Home</a></li>
+          <li class="mobile-navbar-display mobile-navbar">
+            <a href="#the_band">band</a>
+          </li>
+          <li class="mobile-navbar-display mobile-navbar">
+            <a href="#tour">tour</a>
+          </li>
+          <li class="mobile-navbar-display mobile-navbar">
+            <a href="#contact">contact</a>
+          </li>
+          <li class="header_nav_list_menu desktop-menu">
+            <div class="header_nav_list_menu_btn">
+              <span>more</span>
+              <svg
+                fill="currentColor"
+                height="10px"
+                width="13px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 330 330"
+                xml:space="preserve"
+              >
+                <path
+                  id="XMLID_225_"
+                  d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+	c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+	s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                />
+              </svg>
+            </div>
+            <div class="header_nav_list_menu_btn_tooltip">
+              <ul>
+                <li>Merchandise</li>
+                <li>Extras</li>
+                <li>Media</li>
+              </ul>
+            </div>
+          </li>
+          <li class="mobile-navbar-display mobile-navbar only-mobile-visible">
+            <a href="#">Merch</a>
+          </li>
+        </ul>
+        <img
+          class="desktop-menu"
+          src="media/search-alt-1-svgrepo-com.svg"
+          alt=""
+        />
+        <img class="mobile-menu" src="media/menu-svgrepo-com.svg" alt="" />
+      </nav>
+    </header>
+    <main>
+      <section class="hero-sec">
+        <div class="img-div img-div-display">
+          <img src="media/ny.jpg" alt="" />
+          <div class="img-div-content display-mobile-invisible">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="img-div">
+          <img src="media/chicago.jpg" alt="" />
+          <div class="img-div-content display-mobile-invisible">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+        <div class="img-div">
+          <img src="media/la.jpg" alt="" />
+          <div class="img-div-content display-mobile-invisible">
+            <h3>Los Angeles</h3>
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+        </div>
+      </section>
+      <section class="band" id="the_band">
+        <div class="band-container">
+          <h2>The Band</h2>
+          <span>We love music</span>
+          <p>
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="three-cloth-card">
+            <div class="card">
+              <span>Name</span>
+              <img src="media/bandmember.jpg" alt="" />
+            </div>
+            <div class="card">
+              <span>Name</span>
+              <img src="media/bandmember.jpg" alt="" />
+            </div>
+            <div class="card">
+              <span>Name</span>
+              <img src="media/bandmember.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tour date section -->
+      <section class="tour-dates-container" id="tour">
+        <div class="tour-dates">
+          <h2>Tour Dates</h2>
+          <span>Remember to book your tickets!</span>
+          <div class="calender">
+            <div class="sept cal">
+              <span>September</span>
+              <span class="sold-or-not">Sold out</span>
+            </div>
+            <div class="oct cal">
+              <span>October</span>
+              <span class="sold-or-not">Sold out</span>
+            </div>
+            <div class="nov cal">
+              <span>November</span>
+              <span class="sold-or-not">3</span>
+            </div>
+          </div>
+          <div class="tour-dates-cards">
+            <div class="card">
+              <img src="media/newyork.jpg" alt="" />
+              <div class="card-body">
+                <span class="card-title">New York</span>
+                <span class="date">Fri 27 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media/paris.jpg" alt="" />
+              <div class="card-body">
+                <span class="card-title">Paris</span>
+                <span class="date">Sat 28 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="media/sanfran.jpg" alt="" />
+              <div class="card-body">
+                <span class="card-title">San Francisco</span>
+                <span class="date">Sun 29 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button>Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="contact-section-container" id="contact">
+        <div class="contact-section">
+          <h2>Contact</h2>
+          <span>Fan? Drop a note!</span>
+          <div class="contact-section-form-address">
+            <div class="address">
+              <div class="location address-item">
+                <img src="media/location-pin-svgrepo-com.svg" alt="" />
+                <h4>Chicago, US</h4>
+              </div>
+              <div class="number address-item">
+                <img src="media/call-svgrepo-com.svg" alt="" />
+                <h4>Phone: +00 151515</h4>
+              </div>
+              <div class="email address-item">
+                <img src="media/email-svgrepo-com.svg" alt="" />
+                <h4>Email: mail@mail.com</h4>
+              </div>
+            </div>
+            <div class="form">
+              <form action="">
+                <div class="form-name-mail">
+                  <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                </div>
+                <input type="text" placeholder="Message" class="message" />
+                <input type="button" value="Send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="img-map">
+        <img src="media/map.jpg" alt="" />
+      </section>
+
+      <footer class="footer">
+        <div class="social-icons">
+          <img src="media/facebook-svgrepo-com.svg" alt="" />
+          <img src="media/instagram-svgrepo-com.svg" alt="" />
+          <img src="media/snapchat-svgrepo-com.svg" alt="" />
+          <img src="media/pinterest-svgrepo-com.svg" alt="" />
+          <img src="media/twitter-154-svgrepo-com.svg" alt="" />
+          <img src="media/linkedin-svgrepo-com.svg" alt="" />
+        </div>
+        <div class="copyright">
+          <h5>Powered by <a href="#">Hashir Akbar</a></h5>
+        </div>
+      </footer>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+
+}
+
+body {
+  font: inherit;
+}
+
+/* Header */
+.header {
+  background: #000;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+.header .header_nav,
+.header .header_nav .header_nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header_nav .header_nav_list,
+.header_nav_list_menu_btn_tooltip ul {
+  justify-content: start;
+  list-style-type: none;
+}
+
+.header .header_nav .header_nav_list {
+  text-transform: uppercase;
+
+}
+
+.header .header_nav .header_nav_list a,
+.header_nav_list_menu_btn,
+.header_nav>img {
+
+  padding: .9em 1.4em;
+
+
+}
+
+.header_nav>img {
+  height: 48px;
+  margin-inline: initial;
+
+}
+
+.header_nav>img:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.header .header_nav .header_nav_list a,
+.header_nav_list_menu_btn {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header .header_nav .header_nav_list a:hover,
+.header_nav_list_menu_btn:hover {
+  background-color: #cccc;
+  color: black;
+  cursor: pointer;
+}
+
+.header_nav_list_menu_btn {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.header_nav_list_menu_btn_tooltip {
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+.header_nav_list_menu_btn_tooltip ul li {
+  padding: .6em 1em;
+}
+
+.header_nav_list_menu_btn_tooltip ul li:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.header_nav_list_menu_btn:hover+.header_nav_list_menu_btn_tooltip,
+.header_nav_list_menu_btn_tooltip:hover {
+  display: block;
+}
+
+
+
+/* main */
+.hero-sec {
+  margin-top: 3em;
+}
+
+.hero-sec .img-div>img {
+  width: 100%;
+}
+
+
+.img-div {
+  position: relative;
+  display: none;
+}
+
+.img-div-display {
+  display: block;
+}
+
+.hero-sec .img-div .img-div-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  text-align: center;
+  color: white;
+}
+
+.hero-sec .img-div .img-div-content h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+
+}
+
+.hero-sec .img-div .img-div-content p {
+  font-weight: bold;
+  padding-top: 1.3em;
+}
+
+/* section band */
+
+.band .band-container,
+.tour-dates,
+.contact-section {
+  margin: 1em auto;
+  padding-block: 50px;
+  max-width: 800px;
+  text-align: center;
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.band .band-container h2,
+.tour-dates h2,
+.contact-section-container h2 {
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.band .band-container span,
+.tour-dates span,
+.contact-section-container span {
+  color: #656565;
+  font-style: italic;
+}
+
+.band .band-container p,
+.tour-dates .calender,
+.contact-section-form-address {
+  text-align: left;
+}
+
+.three-cloth-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-cloth-card .card img {
+  width: 60%;
+}
+
+.three-cloth-card .card span {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 17px;
+  font-style: normal;
+  color: #000;
+}
+
+/* tour-dates */
+.tour-dates-container {
+  background: #000000;
+  color: white;
+  padding-block: 1em;
+}
+
+
+.tour-dates .calender .cal {
+  background: #fff;
+}
+
+.tour-dates>span {
+  color: #999999;
+  padding-bottom: 1.4em;
+}
+
+.tour-dates .calender .cal {
+  padding: .6em 1em;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.tour-dates .calender .cal .sold-or-not {
+
+  padding: .2em .4em;
+  background-color: #f44336;
+  color: white;
+}
+
+.tour-dates .calender .nov {
+  justify-content: space-between;
+}
+
+.tour-dates .calender .nov .sold-or-not {
+  border-radius: 100%;
+  background: #000;
+  padding: .2em .55em;
+}
+
+.tour-dates .calender span {
+  font-style: normal;
+
+}
+
+.tour-dates-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.tour-dates-cards .card {
+  width: 33.33%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+
+}
+
+.tour-dates-cards .card .card-body {
+  background: #fff;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.tour-dates-cards .card .card-body span {
+
+  font-style: normal;
+}
+
+.tour-dates-cards .card .card-body .card-title {
+
+  color: black;
+  font-weight: bolder;
+}
+
+.tour-dates-cards .card .card-body button {
+
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+  border: none;
+  font-weight: 400;
+  font: inherit;
+  align-self: baseline;
+}
+
+.tour-dates-cards .card .card-body button:hover,
+.contact-section-form-address .form input[type="button"]:hover {
+  background: #ccc;
+  color: black;
+  cursor: pointer;
+}
+
+.tour-dates-cards .card>img:hover {
+  opacity: 0.6;
+}
+
+/* contact section */
+.contact-section-form-address {
+  display: flex;
+  gap: 2em;
+  padding-block: 3em;
+}
+
+.contact-section-form-address>div {
+  width: 50%;
+}
+
+.contact-section-form-address .address h4 {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.address-item {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.address-item img {
+  margin: initial;
+}
+
+.contact-section-form-address .form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  font: inherit;
+
+}
+
+.contact-section-form-address .form .form-name-mail {
+  display: flex;
+  gap: .7em;
+
+}
+
+.contact-section-form-address .form input.message {
+  margin-block: .5em;
+}
+
+.contact-section-form-address .form input[type="button"] {
+  width: auto;
+  border: none;
+  background-color: #000;
+  color: white;
+  margin-left: auto;
+}
+
+.img-map img {
+  filter: grayscale(50%);
+}
+
+/* footer */
+.footer {
+  background-color: #f6f6f6;
+  padding-block: 4em;
+  color: #656565;
+}
+
+.footer .social-icons img {
+  width: 22px;
+  margin: initial;
+
+}
+
+.footer .social-icons img:hover {
+  opacity: 0.6;
+}
+
+.footer .social-icons img:first-child {
+  width: 29px;
+}
+
+.social-icons,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.footer {
+  flex-direction: column;
+}
+
+.footer .copyright h5 {
+  font-weight: 500;
+
+}
+
+.footer .copyright a {
+  color: inherit;
+
+
+}
+
+
+/* media queries */
+.display-block {
+  display: block;
+}
+
+@media (max-width:600px) {
+  .header .header_nav .header_nav_list {
+    flex-direction: column;
+  }
+
+  .desktop-menu,
+  .mobile-navbar-display,
+  .display-mobile-invisible {
+    display: none;
+  }
+
+  .three-cloth-card,
+  .tour-dates-cards,
+  .contact-section-form-address,
+  .form-name-mail {
+    flex-direction: column;
+
+  }
+
+  .tour-dates-cards .card,
+  .contact-section-form-address>div {
+    width: 100%;
+
+  }
+
+  .tour-dates-cards .card img {
+    margin: initial;
+  }
+
+  .three-cloth-card .card img {
+    width: 100%;
+  }
+
+}
+
+@media (min-width:600px) {
+
+  .mobile-menu,
+  .only-mobile-visible {
+    display: none;
+  }
+
+
+
+}
